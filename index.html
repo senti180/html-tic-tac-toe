@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <title>Amőba</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            font-family: Verdana;
+        }
+
+        .wrapper {
+            width: 602px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        @media screen and (max-width: 900px) {
+            .wrapper {
+                width: 302px !important;
+            }
+
+            .box {
+                width: 100px !important;
+                height: 100px !important;
+            }
+
+            .container {
+                margin-top: 20vh !important;
+            }
+        }
+
+        .box {
+            display: inline-block;
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+        }
+
+        .container {
+            margin-top: 10vh;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box:nth-child(odd) {
+            background: rgba(100, 149, 237, 1);
+        }
+
+        .box:nth-child(even) {
+            background: white;
+        }
+
+        .icon {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            padding: 20%;
+        }
+
+        .box:hover {
+            cursor: pointer;
+        }
+
+        .box:nth-child(odd):hover {
+            background-color: rgba(100, 149, 237, 0.5);;
+        }
+
+        .box:nth-child(even):hover {
+            background: lightgray;
+        }
+
+        img {
+            border: 0px !important;
+        }
+    </style>
+</head>
+<body>
+<h1 id="playerWrap" style="text-align: center; margin-top: 15px; font-weight: normal">Current Player: <b id="player">Circle</b></h1>
+<div class="container">
+    <div class="wrapper">
+        <div class="box">
+            <div class="icon">
+                <img src="empty.svg" id="1" onclick="play(this)">
+            </div>
+        </div>
+        <div class="box">
+            <div class="icon">
+                <img src="empty.svg" id="2" onclick="play(this)">
+            </div>
+        </div>
+        <div class="box">
+            <div class="icon">
+                <img src="empty.svg" id="3" onclick="play(this)">
+            </div>
+        </div>
+        <div class="box">
+            <div class="icon">
+                <img src="empty.svg" id="4" onclick="play(this)">
+            </div>
+        </div>
+        <div class="box">
+            <div class="icon">
+                <img src="empty.svg" id="5" onclick="play(this)">
+            </div>
+        </div>
+        <div class="box">
+            <div class="icon">
+                <img src="empty.svg" id="6" onclick="play(this)">
+            </div>
+        </div>
+        <div class="box">
+            <div class="icon">
+                <img src="empty.svg" id="7" onclick="play(this)">
+            </div>
+        </div>
+        <div class="box">
+            <div class="icon">
+                <img src="empty.svg" id="8" onclick="play(this)">
+            </div>
+        </div>
+        <div class="box">
+            <div class="icon">
+                <img src="empty.svg" id="9" onclick="play(this)">
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js.js"></script>
+</body>
+</html>
